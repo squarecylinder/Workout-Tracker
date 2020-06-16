@@ -11,7 +11,6 @@ const workoutSchema = new Schema({
         {
             type: {
                 type: String,
-                default: "cardio"
             },
             name: {
                 type: String
