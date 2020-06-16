@@ -20,6 +20,7 @@ async function initWorkout() {
     renderNoWorkoutText()
   }
 }
+// a function to get the total duration of the workouts
 function totDuration(lastWorkout) {
   let totalDur = 0
   lastWorkout.exercises.forEach(exercise => {

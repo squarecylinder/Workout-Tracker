@@ -1,13 +1,13 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  app.get("/api/workouts", function(req, res) {
-    db.Workout.find({}).then(function(dbWorkout) {
+  app.get("/api/workouts", (req, res) => {
+    db.Workout.find({}).then(dbWorkout => {
       res.json(dbWorkout);
     });
 
-    app.get("/api/workouts/range", function(req, res) {
-        db.Workout.find({}).then(function(dbWorkout){
+    app.get("/api/workouts/range", (req, res) => {
+        db.Workout.find({}).then(dbWorkout => {
             res.json(dbWorkout);
         })
     })
