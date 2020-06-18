@@ -24,11 +24,9 @@ async function initWorkout() {
 function totDuration(lastWorkout) {
   let totalDur = 0
   lastWorkout.exercises.forEach(exercise => {
-    // console.log(exercise.duration)
-    totalDur = totalDur + exercise.duration
+    totalDur += exercise.duration
   })
-  totDur = totalDur
-  return totDur
+  return totalDur;
 }
 function tallyExercises(exercises) {
   const tallied = exercises.reduce((acc, curr) => {
